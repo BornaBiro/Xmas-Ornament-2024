@@ -1,0 +1,73 @@
+Board outline:
+r = 30mm
+alpha1 = 85°
+alpha2 = 95°
+
+85°
+x = 30 * cos(85°) = 2.61467mm
+y = 30 * sin(85°) = 29.8858mm
+
+95°
+x = 2.61467mm
+y = 29.8858mm
+
+Arc angle = 350°
+--------------------
+LED positions:
+Angle step: 360 / 8 = 45°
+r = 27mm
+
+X0 = 27 cos(45 * 0) = 0
+Y0 = 27 sin(45 * 0) = -27
+
+X1 = 19.091188
+Y1 = -19.091188
+
+X2 = 27
+Y2 = 0
+
+X3 = 19.091188
+Y3 = 19.091188
+
+X4 = 0
+Y4 = 27
+
+X5 = -19.091188
+Y5 = 19.091188
+
+X6 = -27
+Y6 = 0
+
+X7 = -19.091188
+Y7 = -19.091188
+
+
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+#include <math.h>
+
+float radius = 27;
+int numOfLeds = 12;
+int designatorShift = 2;
+
+int main()
+{
+    double angleStep = 360.0 / numOfLeds;
+    for (int i = 0; i < numOfLeds; i++)
+    {
+        double currentAngle = (M_PI / 180.0 * angleStep * i) - (M_PI / 180.0 * 90);
+        double x = radius * cos(currentAngle);
+        double y = radius * sin(currentAngle);
+        
+        printf("LED%d, angle: %.2f, x: %.6f, y: %.6f\r\n", i + designatorShift, angleStep * i, x, y);
+   }
+
+    return 0;
+}
