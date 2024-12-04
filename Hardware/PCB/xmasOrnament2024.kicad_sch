@@ -3062,6 +3062,12 @@
 		(uuid "51ac7d32-4005-41f4-a4e0-7b32a674f547")
 	)
 	(junction
+		(at 113.03 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "55910b03-a962-4ccd-a7da-6adc31d087d3")
+	)
+	(junction
 		(at 176.53 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3919,6 +3925,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 31.75) (xy 115.57 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52f90d3f-167b-4dd3-a9a6-cbf73f7aa78c")
+	)
+	(wire
+		(pts
 			(xy 227.33 121.92) (xy 226.06 121.92)
 		)
 		(stroke
@@ -4056,6 +4072,16 @@
 			(type default)
 		)
 		(uuid "626cd2d7-1424-46c2-951b-02f00c35c28b")
+	)
+	(wire
+		(pts
+			(xy 113.03 36.83) (xy 113.03 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e11861-19c4-4ab4-9599-724faa429c3e")
 	)
 	(wire
 		(pts
@@ -4209,7 +4235,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 48.26) (xy 99.06 43.18)
+			(xy 113.03 48.26) (xy 113.03 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4919,6 +4945,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 36.83) (xy 113.03 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7c300d3-c865-4be7-bf16-31fad535be24")
+	)
+	(wire
+		(pts
 			(xy 242.57 121.92) (xy 246.38 121.92)
 		)
 		(stroke
@@ -5146,6 +5182,16 @@
 			(type default)
 		)
 		(uuid "cc1db629-7408-409e-93d9-b1c9790d4aef")
+	)
+	(wire
+		(pts
+			(xy 113.03 40.64) (xy 114.3 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cce72682-8e10-41e4-b658-06ae78eb0f70")
 	)
 	(wire
 		(pts
@@ -5439,7 +5485,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 40.64) (xy 100.33 40.64)
+			(xy 93.98 40.64) (xy 113.03 40.64)
 		)
 		(stroke
 			(width 0)
@@ -5449,7 +5495,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 43.18) (xy 100.33 43.18)
+			(xy 113.03 43.18) (xy 114.3 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5815,7 +5861,7 @@
 		)
 		(uuid "50bbd41f-dcbb-4226-9280-7102e39200ce")
 	)
-	(label "BTN1"
+	(label "BTN2"
 		(at 45.72 115.57 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5837,7 +5883,7 @@
 		)
 		(uuid "6d9ee527-8c4a-467e-816d-b4731b831807")
 	)
-	(label "BTN2"
+	(label "BTN1"
 		(at 45.72 120.65 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7739,16 +7785,15 @@
 	)
 	(symbol
 		(lib_id "Borna KiCAD Libary:S2B-PH-SM4-TB")
-		(at 102.87 41.91 0)
+		(at 116.84 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2f39d7d0-3182-4fcd-a7b4-400df789e921")
 		(property "Reference" "CONN1"
-			(at 107.95 40.6399 0)
+			(at 122.428 45.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7757,7 +7802,7 @@
 			)
 		)
 		(property "Value" "S2B-PH-SM4-TB"
-			(at 107.95 43.1799 0)
+			(at 124.714 50.546 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7766,7 +7811,7 @@
 			)
 		)
 		(property "Footprint" "Borna KiCAD Library:JST_S2B-PH-SM4-TB"
-			(at 102.87 41.91 0)
+			(at 116.84 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7775,7 +7820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 41.91 0)
+			(at 116.84 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7784,7 +7829,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 102.87 41.91 0)
+			(at 116.84 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9606,6 +9651,71 @@
 			(project "xmasOrnamentV2"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 115.57 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7ea42893-cb61-4ca3-846b-f04e8138fc3a")
+		(property "Reference" "#PWR054"
+			(at 115.57 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 115.57 28.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 115.57 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "76964e9e-fb2c-4a7b-80df-8ff7df3f023d")
+		)
+		(instances
+			(project "xmasOrnamentV2"
+				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -12333,7 +12443,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 48.26 0)
+		(at 113.03 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12341,7 +12451,7 @@
 		(dnp no)
 		(uuid "dd44b518-b548-46c5-a6b0-c36916cce59e")
 		(property "Reference" "#PWR09"
-			(at 99.06 54.61 0)
+			(at 113.03 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12350,7 +12460,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 51.816 0)
+			(at 113.03 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12358,7 +12468,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 48.26 0)
+			(at 113.03 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12367,7 +12477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 48.26 0)
+			(at 113.03 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12376,7 +12486,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 48.26 0)
+			(at 113.03 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
