@@ -2278,6 +2278,175 @@
 				)
 			)
 		)
+		(symbol "Borna KiCAD Libary:TPS7A2633DRVR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPS7A2633DRVR"
+				(at 0.508 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:WSON-6"
+				(at -0.254 -8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS7A2633DRVR_1_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "TP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Borna KiCAD Libary:TYPE-C_16PIN_2MD(073)"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3080,6 +3249,12 @@
 		(uuid "7068af84-19f1-434f-9a1b-962a0d254e71")
 	)
 	(junction
+		(at 17.78 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7467e866-2bbd-465b-8c0f-3b2a77cb7963")
+	)
+	(junction
 		(at 31.75 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3322,6 +3497,16 @@
 			(type default)
 		)
 		(uuid "10607219-69b3-49e2-b2df-1731c5176325")
+	)
+	(wire
+		(pts
+			(xy 19.05 119.38) (xy 19.05 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10aff53d-732c-4176-b06f-4f9486ea17ba")
 	)
 	(wire
 		(pts
@@ -3855,6 +4040,16 @@
 	)
 	(wire
 		(pts
+			(xy 17.78 116.84) (xy 21.59 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4caa5fc1-66f2-47a5-854a-1a8afd7091e8")
+	)
+	(wire
+		(pts
 			(xy 93.98 40.64) (xy 93.98 41.91)
 		)
 		(stroke
@@ -3972,6 +4167,16 @@
 			(type default)
 		)
 		(uuid "5987e81d-ea2c-4e92-ba9d-0fcd92114925")
+	)
+	(wire
+		(pts
+			(xy 35.56 114.3) (xy 39.37 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "599063ed-b53d-4176-b207-a4772fa2fee8")
 	)
 	(wire
 		(pts
@@ -4415,6 +4620,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 116.84) (xy 38.1 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "840577ae-b17b-4892-b934-5f0787b35f0d")
+	)
+	(wire
+		(pts
 			(xy 64.77 38.1) (xy 64.77 48.26)
 		)
 		(stroke
@@ -4502,6 +4717,16 @@
 			(type default)
 		)
 		(uuid "8857a818-3f87-4749-9818-950e4e52370b")
+	)
+	(wire
+		(pts
+			(xy 17.78 113.03) (xy 17.78 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88e1da0f-ea0a-4ce3-9bf4-1bfbba25e8c4")
 	)
 	(wire
 		(pts
@@ -4985,6 +5210,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 114.3) (xy 39.37 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bca40c31-0564-4f9b-bdcc-105ec05cdb64")
+	)
+	(wire
+		(pts
 			(xy 238.76 39.37) (xy 240.03 39.37)
 		)
 		(stroke
@@ -5095,6 +5330,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 116.84) (xy 38.1 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c521d208-33f1-4e72-a2e8-379a3b9d1c3f")
+	)
+	(wire
+		(pts
 			(xy 248.92 121.92) (xy 247.65 121.92)
 		)
 		(stroke
@@ -5122,6 +5367,16 @@
 			(type default)
 		)
 		(uuid "c665a9ec-0eec-47ed-b047-6a8ace541414")
+	)
+	(wire
+		(pts
+			(xy 17.78 114.3) (xy 21.59 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fc0e61-0ead-40f5-8c96-daf6787d0a29")
 	)
 	(wire
 		(pts
@@ -5265,6 +5520,16 @@
 	)
 	(wire
 		(pts
+			(xy 17.78 114.3) (xy 17.78 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d38c411f-58f8-4985-9cbf-24ebee04e2b2")
+	)
+	(wire
+		(pts
 			(xy 238.76 39.37) (xy 238.76 35.56)
 		)
 		(stroke
@@ -5352,6 +5617,16 @@
 			(type default)
 		)
 		(uuid "e0efaa92-3121-4f48-8cb0-fa1721c785d7")
+	)
+	(wire
+		(pts
+			(xy 21.59 119.38) (xy 19.05 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e129e42c-aca4-4bdf-ac92-a78523992eb3")
 	)
 	(wire
 		(pts
@@ -5938,17 +6213,6 @@
 		)
 		(uuid "aa60cc23-7191-45c8-a930-7f013a664a12")
 	)
-	(label "VDD"
-		(at 121.92 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ad318838-e45f-46a0-aa9b-0657321a9d6c")
-	)
 	(label "WS_DIN"
 		(at 91.44 118.11 180)
 		(fields_autoplaced yes)
@@ -5959,6 +6223,17 @@
 			(justify right bottom)
 		)
 		(uuid "b1164d7f-8c67-422b-b144-97c8655c6093")
+	)
+	(label "3V3"
+		(at 121.92 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ccea5511-4886-4d6e-b2a8-cf9138d9e62b")
 	)
 	(label "WS_DIN"
 		(at 130.81 99.06 0)
@@ -6067,7 +6342,7 @@
 			(uuid "4056e3f4-4ac0-4620-8a25-afc7129cbd83")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "SW1")
 					(unit 1)
@@ -6132,7 +6407,7 @@
 			(uuid "49ffdbad-901a-47f0-a3bc-ccd37aadc219")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR036")
 					(unit 1)
@@ -6197,9 +6472,74 @@
 			(uuid "ca17618f-9e9f-4559-a5ee-3c7e2619dead")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 17.78 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06093dca-c8cf-4c3c-a3d1-09ce1dd072e2")
+		(property "Reference" "#PWR058"
+			(at 17.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 17.78 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 17.78 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 17.78 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 17.78 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fff2977-f9c2-4e60-b59b-65a3710bf12b")
+		)
+		(instances
+			(project "xmasOrnament2024"
+				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -6271,7 +6611,7 @@
 			(uuid "24effcdc-a464-4f8e-9294-422fb533e6f3")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED6")
 					(unit 1)
@@ -6336,7 +6676,7 @@
 			(uuid "7c128c4e-88ef-4050-b4fe-9326052f2067")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR024")
 					(unit 1)
@@ -6410,7 +6750,7 @@
 			(uuid "2403e255-4e47-4cf5-8232-7048fb9e60ed")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED9")
 					(unit 1)
@@ -6483,7 +6823,7 @@
 			(uuid "c5b074b8-4c07-4a5a-a9c7-8aa150440bf1")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED8")
 					(unit 1)
@@ -6548,7 +6888,7 @@
 			(uuid "f242fd54-fc08-4d91-9d89-b7d25bb7dcfc")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR033")
 					(unit 1)
@@ -6613,7 +6953,7 @@
 			(uuid "5381d30c-afea-42f8-946e-14cbf761f761")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR031")
 					(unit 1)
@@ -6678,7 +7018,7 @@
 			(uuid "87ea8d62-4c9c-4e3a-84bb-1819e68a493c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR01")
 					(unit 1)
@@ -6743,7 +7083,7 @@
 			(uuid "5a9ccb6c-a81a-48b1-9092-c1fb3421c3e6")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR020")
 					(unit 1)
@@ -6813,7 +7153,7 @@
 			(uuid "8e028bd3-fe57-4a26-b648-40307b0971fd")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "SPK1")
 					(unit 1)
@@ -6882,7 +7222,7 @@
 			(uuid "954c88da-e0c3-4ca9-a03c-d712a6187c65")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R8")
 					(unit 1)
@@ -6947,7 +7287,7 @@
 			(uuid "58f6ed9e-b9ed-4713-979b-eded99dfab45")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR07")
 					(unit 1)
@@ -7012,7 +7352,7 @@
 			(uuid "259b0bb0-09ad-42c1-85e7-405fd8a0f101")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR041")
 					(unit 1)
@@ -7086,7 +7426,7 @@
 			(uuid "74e9c120-be15-4dd0-974c-e6580b3f4089")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED5")
 					(unit 1)
@@ -7151,7 +7491,7 @@
 			(uuid "c3c7883e-8ce8-4794-b9d5-8bd183c8b249")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR011")
 					(unit 1)
@@ -7218,7 +7558,7 @@
 			(uuid "29eb9756-fb3a-4664-9597-3c0ed8aa971a")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C12")
 					(unit 1)
@@ -7287,7 +7627,7 @@
 			(uuid "f90a3091-d136-425b-998a-75a346a04ff3")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R9")
 					(unit 1)
@@ -7373,7 +7713,7 @@
 			(uuid "cf5cb2b4-4707-4a99-ab2d-324af1c559b4")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "IC1")
 					(unit 1)
@@ -7438,7 +7778,7 @@
 			(uuid "c15b991a-1a0a-47eb-8909-c9185cbe7957")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR035")
 					(unit 1)
@@ -7503,7 +7843,7 @@
 			(uuid "b343b12d-4ae7-4fbb-b051-8eecacd0066e")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR015")
 					(unit 1)
@@ -7568,7 +7908,7 @@
 			(uuid "f9ab2741-164d-46d4-9e47-a78b0d842a56")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR030")
 					(unit 1)
@@ -7637,7 +7977,7 @@
 			(uuid "8d678e66-3f01-4133-8eeb-e72e95d463fb")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R14")
 					(unit 1)
@@ -7710,7 +8050,7 @@
 			(uuid "d10d66cd-9804-4f38-8d91-fb7787809e98")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED2")
 					(unit 1)
@@ -7775,7 +8115,7 @@
 			(uuid "d0355af9-552d-4e1f-aa12-a8af69c9940b")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR02")
 					(unit 1)
@@ -7844,7 +8184,7 @@
 			(uuid "ab37997e-6f70-471a-b076-bb9b570be121")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "CONN1")
 					(unit 1)
@@ -7909,7 +8249,7 @@
 			(uuid "458a35b3-043a-4107-b2c3-f3cec7bc4480")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR037")
 					(unit 1)
@@ -7974,7 +8314,7 @@
 			(uuid "32eebf25-1953-42e8-a1e7-3a2e90f57806")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR03")
 					(unit 1)
@@ -8039,7 +8379,7 @@
 			(uuid "ab6e65e4-6eb5-41ad-9505-eecff7162433")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR025")
 					(unit 1)
@@ -8113,7 +8453,7 @@
 			(uuid "6c81c868-c9c0-44bc-b3a2-5ed774a7b204")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED12")
 					(unit 1)
@@ -8178,7 +8518,7 @@
 			(uuid "2dc1b7b9-40b1-4023-bef6-22a5afead4ea")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR010")
 					(unit 1)
@@ -8243,7 +8583,7 @@
 			(uuid "34608126-9baf-4c52-8462-4a40d3e10cd8")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR029")
 					(unit 1)
@@ -8317,7 +8657,7 @@
 			(uuid "9258fbfe-cf64-4640-a8aa-bb950c51ebd8")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED3")
 					(unit 1)
@@ -8382,7 +8722,7 @@
 			(uuid "72a71bfc-b037-43f5-9a2b-4516ce1149dc")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR04")
 					(unit 1)
@@ -8453,7 +8793,7 @@
 			(uuid "2c7f697d-841c-458b-937d-de8003d5a952")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "SW2")
 					(unit 1)
@@ -8518,7 +8858,7 @@
 			(uuid "2c700faa-2b1b-4dfd-8f6e-6a984f5c87f5")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "TP1")
 					(unit 1)
@@ -8583,7 +8923,7 @@
 			(uuid "fa5dcffc-b848-4fa0-b342-924919cd5fff")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR046")
 					(unit 1)
@@ -8648,7 +8988,7 @@
 			(uuid "f19649e7-7037-443a-b13e-67fe37ecaf76")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "TP2")
 					(unit 1)
@@ -8715,7 +9055,7 @@
 			(uuid "3f693a41-8642-4d5f-8620-bb5256454e69")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C1")
 					(unit 1)
@@ -8782,7 +9122,7 @@
 			(uuid "38b99b98-d373-4674-a630-7f0e98744b23")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R5")
 					(unit 1)
@@ -8808,7 +9148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
+		(property "Value" "3V3"
 			(at 44.45 85.344 0)
 			(effects
 				(font
@@ -8847,9 +9187,74 @@
 			(uuid "a7d2cb35-0c81-43e4-8679-0d7220479ab4")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 19.05 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "54807d8f-5e51-442d-8770-a3b69e8fffa4")
+		(property "Reference" "#PWR055"
+			(at 19.05 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 19.05 124.206 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 19.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 19.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 19.05 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32146660-e1ac-416f-b90c-6d8aef530459")
+		)
+		(instances
+			(project "xmasOrnament2024"
+				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -8912,7 +9317,7 @@
 			(uuid "f60491a9-ffb2-48f8-b0af-54fcfa4c8aa8")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR032")
 					(unit 1)
@@ -8977,7 +9382,7 @@
 			(uuid "f36e3f55-6f3f-4e02-9d86-2a0c9b93516d")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR06")
 					(unit 1)
@@ -9044,7 +9449,7 @@
 			(uuid "4cf88321-23a8-4509-af59-dca97d00cf26")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C9")
 					(unit 1)
@@ -9165,7 +9570,7 @@
 			(uuid "664b4349-b9ad-42b7-a396-e42d2b43c478")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "U1")
 					(unit 1)
@@ -9230,7 +9635,7 @@
 			(uuid "857a4307-ecbd-4bea-851e-99b790911aeb")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR052")
 					(unit 1)
@@ -9304,7 +9709,7 @@
 			(uuid "e666eb78-235e-44bf-b892-0e9f4476b274")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED4")
 					(unit 1)
@@ -9373,7 +9778,7 @@
 			(uuid "c7069e0b-651e-479e-87db-73de1d17a333")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R6")
 					(unit 1)
@@ -9440,7 +9845,7 @@
 			(uuid "c68f628e-e268-49f4-8c48-1ad82abba87f")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C10")
 					(unit 1)
@@ -9505,7 +9910,7 @@
 			(uuid "a9046007-ab14-4b5a-a503-fb9faf1ad20a")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR019")
 					(unit 1)
@@ -9579,7 +9984,7 @@
 			(uuid "9231482b-a983-43c8-9d9e-b4b0a26ed32c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED13")
 					(unit 1)
@@ -9648,7 +10053,7 @@
 			(uuid "0e591003-28b5-471d-acbe-83bd7a93fe65")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R12")
 					(unit 1)
@@ -9713,7 +10118,7 @@
 			(uuid "76964e9e-fb2c-4a7b-80df-8ff7df3f023d")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR054")
 					(unit 1)
@@ -9778,7 +10183,7 @@
 			(uuid "f1a6da7b-8c61-4151-8f33-5994fbdf744b")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "TP5")
 					(unit 1)
@@ -9843,7 +10248,7 @@
 			(uuid "f65bafb1-5837-4699-96bd-82e7e4768470")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR021")
 					(unit 1)
@@ -9916,7 +10321,7 @@
 			(uuid "a757a7f9-5e4b-48b6-832a-c7c763703774")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "Q1")
 					(unit 1)
@@ -9989,7 +10394,7 @@
 			(uuid "65968c7f-c236-4586-9522-1591126f7c61")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "Q2")
 					(unit 1)
@@ -10054,7 +10459,7 @@
 			(uuid "c32090c7-e28a-41b9-a1c8-e23855f84e39")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR050")
 					(unit 1)
@@ -10123,9 +10528,89 @@
 			(uuid "8685324e-2e17-4da1-a39c-ba52bbae76a1")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Borna KiCAD Libary:TPS7A2633DRVR")
+		(at 27.94 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91af6645-ccdc-4971-a60c-46588489b614")
+		(property "Reference" "U2"
+			(at 28.575 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS7A2633DRVR"
+			(at 28.575 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Borna KiCAD Library:WSON-6"
+			(at 27.686 125.222 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "a6bb6858-2b3d-4cd3-bd43-f1f0998ca1b9")
+		)
+		(pin "TP"
+			(uuid "2984ee6a-dab3-4423-ad12-47bc01017572")
+		)
+		(pin "1"
+			(uuid "6ea65523-2dc6-4a9b-9aba-47efa0ad9e25")
+		)
+		(pin "5"
+			(uuid "0700cd31-be52-4dad-b55d-9ff25e767eca")
+		)
+		(pin "4"
+			(uuid "aec7bacc-c6f8-4047-acfd-75c85815d5e1")
+		)
+		(pin "3"
+			(uuid "c082e660-46f7-4326-ba35-3ede49d6b911")
+		)
+		(instances
+			(project "xmasOrnament2024"
+				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -10188,7 +10673,7 @@
 			(uuid "f5070cf1-2f73-45df-bd17-0f4e64a444c5")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR026")
 					(unit 1)
@@ -10257,7 +10742,7 @@
 			(uuid "1ed5fb66-6a6e-4392-897f-ab999bb1b3f2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R10")
 					(unit 1)
@@ -10326,7 +10811,7 @@
 			(uuid "46fc14d6-ce55-4c5b-b02d-2717c7fdc1d2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R13")
 					(unit 1)
@@ -10393,7 +10878,7 @@
 			(uuid "b0137caa-d6f3-4500-9ad0-1e89d17e861c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C3")
 					(unit 1)
@@ -10458,7 +10943,7 @@
 			(uuid "4048f4a2-66f3-4d65-9f60-791b0d480c27")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR022")
 					(unit 1)
@@ -10525,7 +11010,7 @@
 			(uuid "ed34ab68-f2a9-4388-9bb2-a538d414e4b9")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R4")
 					(unit 1)
@@ -10594,7 +11079,7 @@
 			(uuid "4bcc5339-4236-4b4c-a155-b158e09427e7")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R3")
 					(unit 1)
@@ -10620,7 +11105,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
+		(property "Value" "3V3"
 			(at 187.96 30.734 0)
 			(effects
 				(font
@@ -10659,7 +11144,7 @@
 			(uuid "cb7483ed-03e0-4c8d-9053-b1bde3936e01")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR048")
 					(unit 1)
@@ -10724,7 +11209,7 @@
 			(uuid "f717b4aa-e04b-489f-bb0f-d8513bad24c2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR028")
 					(unit 1)
@@ -10789,7 +11274,7 @@
 			(uuid "b1a3ec1c-e0b3-4373-87ab-4aaa37a0fbb2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR014")
 					(unit 1)
@@ -10858,7 +11343,7 @@
 			(uuid "7eb830e3-8788-4943-accb-d789442bf021")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R1")
 					(unit 1)
@@ -10923,7 +11408,7 @@
 			(uuid "1901ffc8-51cd-4b67-8479-e6546815d354")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR023")
 					(unit 1)
@@ -10988,7 +11473,7 @@
 			(uuid "e1a3591e-abc3-474e-884c-f8fca2b3c153")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR08")
 					(unit 1)
@@ -11053,9 +11538,74 @@
 			(uuid "1eea20ce-5c7f-4d66-9f1f-e33ad232f019")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 59.69 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af055fd7-31c6-4c82-b10f-54a4d3a50364")
+		(property "Reference" "#PWR051"
+			(at 59.69 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 59.69 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 59.69 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90e9533c-4178-46b5-b23c-7e1b31190d75")
+		)
+		(instances
+			(project "xmasOrnament2024"
+				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -11120,7 +11670,7 @@
 			(uuid "05e935d0-5d7c-4c9b-a589-ae7852ea60f4")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C13")
 					(unit 1)
@@ -11185,7 +11735,7 @@
 			(uuid "004a0d61-bc5e-49bc-9256-9f9963774e77")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR038")
 					(unit 1)
@@ -11250,7 +11800,7 @@
 			(uuid "43e380ee-e132-42f0-9e20-64422346f602")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR047")
 					(unit 1)
@@ -11315,7 +11865,7 @@
 			(uuid "604213b1-315c-4094-bf37-2a9858cec25c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR017")
 					(unit 1)
@@ -11380,7 +11930,7 @@
 			(uuid "2f1466b7-fd3f-416d-89c9-88ad9a5e614e")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR044")
 					(unit 1)
@@ -11494,7 +12044,7 @@
 			(uuid "ba8c2cbf-bb1f-4a01-8fc3-b6f8f792326a")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "CONN2")
 					(unit 1)
@@ -11559,7 +12109,7 @@
 			(uuid "0872ad6a-18d4-46be-912f-9e72dce8ff4b")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR012")
 					(unit 1)
@@ -11628,7 +12178,7 @@
 			(uuid "5cb7f9d0-9059-455b-ad3a-a6fd437800a2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R2")
 					(unit 1)
@@ -11693,7 +12243,7 @@
 			(uuid "2171c500-470f-4ba3-8f9e-a0af56df7a77")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR053")
 					(unit 1)
@@ -11758,7 +12308,7 @@
 			(uuid "a4c9cac4-072d-44d9-ab7f-4f6caa02c80f")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR043")
 					(unit 1)
@@ -11825,7 +12375,7 @@
 			(uuid "216e7b9d-a32d-4227-843f-c7b43eaf3fec")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C11")
 					(unit 1)
@@ -11899,7 +12449,7 @@
 			(uuid "3c867298-0822-4e35-93c8-fcd11ed08a6e")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED10")
 					(unit 1)
@@ -11967,7 +12517,7 @@
 			(uuid "f172f8fb-2f49-483b-be8f-078295331995")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED1")
 					(unit 1)
@@ -12034,7 +12584,7 @@
 			(uuid "83ac10b3-b721-4cc0-b349-9a4f00db34c7")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C6")
 					(unit 1)
@@ -12099,7 +12649,7 @@
 			(uuid "2720b17e-0a75-4c9b-840e-8f268af1cf74")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR039")
 					(unit 1)
@@ -12173,7 +12723,7 @@
 			(uuid "28cb6cb0-d229-4d30-999d-050a6cd60f15")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED11")
 					(unit 1)
@@ -12238,7 +12788,7 @@
 			(uuid "e93c6c65-5177-4275-88e0-ec0253e1966f")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR045")
 					(unit 1)
@@ -12303,7 +12853,7 @@
 			(uuid "ddf9f1fb-9c6e-4f1c-8d03-be21020726f2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "TP3")
 					(unit 1)
@@ -12368,7 +12918,7 @@
 			(uuid "5a29224c-92e1-4980-b926-4ee3d6c1af4a")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR027")
 					(unit 1)
@@ -12433,7 +12983,7 @@
 			(uuid "6542f87f-d442-4036-bd7b-b5b1b83f30a7")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR05")
 					(unit 1)
@@ -12498,7 +13048,7 @@
 			(uuid "7a8058e2-7461-45d7-99ec-2ab1b6698ca2")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR09")
 					(unit 1)
@@ -12567,7 +13117,7 @@
 			(uuid "48856b85-a72a-4a9a-8e97-fbba9f101cdd")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "D1")
 					(unit 1)
@@ -12632,7 +13182,7 @@
 			(uuid "0dd488b0-f6ba-4852-8344-35fbb92379f1")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR016")
 					(unit 1)
@@ -12697,7 +13247,7 @@
 			(uuid "47697ecc-dc35-4f0c-808c-3ac7b0a38f0c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR034")
 					(unit 1)
@@ -12764,7 +13314,7 @@
 			(uuid "d52c3595-3bd3-4d4e-8358-905bf19ed8af")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C2")
 					(unit 1)
@@ -12837,7 +13387,7 @@
 			(uuid "bfc5e401-efeb-49c4-b547-6547dde90cdf")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "LED7")
 					(unit 1)
@@ -12904,7 +13454,7 @@
 			(uuid "0758ab9f-427c-49d6-8da2-b86a8b343791")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C5")
 					(unit 1)
@@ -12971,7 +13521,7 @@
 			(uuid "5f0777fa-332f-42ae-8e39-eac893442efd")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C4")
 					(unit 1)
@@ -12980,16 +13530,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 59.69 88.9 0)
+		(lib_id "power:GND")
+		(at 38.1 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ebf0d9c0-8623-4072-97c5-c87a62a1f5bf")
-		(property "Reference" "#PWR051"
-			(at 59.69 92.71 0)
+		(uuid "e996ae0f-2cf4-4bac-888e-40846c39aace")
+		(property "Reference" "#PWR057"
+			(at 38.1 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12997,8 +13547,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
-			(at 59.69 85.344 0)
+		(property "Value" "GND"
+			(at 38.1 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13006,7 +13556,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 88.9 0)
+			(at 38.1 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13015,7 +13565,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 88.9 0)
+			(at 38.1 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13023,8 +13573,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 59.69 88.9 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13033,12 +13583,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d024860d-625f-473c-a1e3-25d63e0bb797")
+			(uuid "bf5ada13-9d41-480c-ae7e-e3fdee414600")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
-					(reference "#PWR051")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -13105,7 +13655,7 @@
 			(uuid "ec0b05bb-632b-4929-8673-9602c747d37c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "R11")
 					(unit 1)
@@ -13170,7 +13720,7 @@
 			(uuid "017cc2e5-d26d-49ae-a2e0-4da698b24eda")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR042")
 					(unit 1)
@@ -13237,7 +13787,7 @@
 			(uuid "2376ec4a-15ad-4032-84e3-23bb162a7a1c")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C8")
 					(unit 1)
@@ -13302,9 +13852,74 @@
 			(uuid "7665496d-8207-4d21-9a9b-04813206f7bd")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 39.37 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6a1dce0-09ca-419f-9ed1-7a11180ba0d3")
+		(property "Reference" "#PWR056"
+			(at 39.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 39.37 109.474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 39.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cc866d8-dfef-4f0b-8772-a6d87313f4e4")
+		)
+		(instances
+			(project "xmasOrnament2024"
+				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -13367,7 +13982,7 @@
 			(uuid "fb3653b2-1fb3-4ecf-be7c-dff2c6ecef3d")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "#PWR049")
 					(unit 1)
@@ -13434,7 +14049,7 @@
 			(uuid "07483900-bb71-4fd9-b3d9-a9fc7802d131")
 		)
 		(instances
-			(project "xmasOrnamentV2"
+			(project "xmasOrnament2024"
 				(path "/4b586804-9690-4d72-8d9c-0efbd06b06d2"
 					(reference "C7")
 					(unit 1)
