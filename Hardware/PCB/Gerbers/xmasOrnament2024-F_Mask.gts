@@ -1,12 +1,12 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.0*
-G04 #@! TF.CreationDate,2024-12-09T22:18:02+01:00*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.5*
+G04 #@! TF.CreationDate,2024-12-10T21:34:54+01:00*
 G04 #@! TF.ProjectId,xmasOrnament2024,786d6173-4f72-46e6-916d-656e74323032,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 8.0.0) date 2024-12-09 22:18:02*
+G04 Created by KiCad (PCBNEW 8.0.5) date 2024-12-10 21:34:54*
 %MOMM*%
 %LPD*%
 G01*
