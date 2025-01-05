@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "WS2812.h"
+#include "Buzzer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,7 +42,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 
-TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim14;
 DMA_HandleTypeDef hdma_tim3_ch1;
@@ -56,7 +56,6 @@ static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM14_Init(void);
-static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
 void tone(TIM_HandleTypeDef *_htim, uint32_t _freq, uint32_t _durMs);
 /* USER CODE END PFP */
@@ -98,29 +97,46 @@ int main(void)
   MX_DMA_Init();
   MX_TIM3_Init();
   MX_TIM14_Init();
-  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_GPIO_WritePin(PERIPH_GPIO_Port, PERIPH_Pin, GPIO_PIN_RESET);
   HAL_Delay(100ULL);
 
-  if (!ws2812_begin(&htim3, &hdma_tim3_ch1, TIM_CHANNEL_1, 12))
+  buzzer_begin(&htim14);
+
+  if (!ws2812_begin(&htim3, &hdma_tim3_ch1, TIM_CHANNEL_1, 12, 2, 9, 6, 3))
   {
 	  while(1);
   }
   for (int i = 0; i < 12; i++)
   {
+	  uint32_t step = 65535 / 12;
 	  ws2812_setPixelColor(i, 0);
+	  ws2812_setPixelColor(i, ws2812_hsv(step * i, 255, 32));
+
   }
-  ws2812_setPixelColor(0, 0x000000ff);
-  ws2812_setPixelColor(1, 0x0000ff00);
-  ws2812_setPixelColor(2, 0x00ff0000);
   ws2812_show();
 
   static const uint16_t melody1Notes[] = {968, 1620, 1447, 1287, 968, 1620, 1445, 1287, 1081, 1706, 1620, 1445, 1219, 1915, 1709, 1447, 1618, 968, 1620, 1445, 1288, 968, 1620, 1445, 1287, 1081, 1709, 1618, 1445, 1919, 2188, 1919, 1709, 1447, 1287, 1620, 1919, 1287, 1445, 1620, 1709, 1618, 1447, 1620, 1445, 1915, 1620, 1915, 1287, 1445, 1618, 1709, 1620, 1915, 1709, 1447, 1287};
   static const uint16_t melody1Durations[] = {216, 218, 217, 219, 1088, 217, 217, 219, 1088, 217, 218, 217, 871, 435, 217, 218, 871, 217, 217, 218, 217, 1089, 217, 218, 217, 1089, 217, 217, 218, 871, 217, 218, 217, 218, 871, 1960, 218, 217, 218, 871, 1089, 871, 435, 217, 436, 434, 1960, 218, 218, 217, 871, 1089, 653, 435, 217, 218, 957};
   int melodyMaxIndex = sizeof(melody1Notes) / sizeof(uint16_t);
 
+  HAL_Delay(8000ULL);
+  for (int i = 0; i < 12; i++)
+  {
+	  ws2812_setPixelColor(i, 0);
+  }
+  HAL_GPIO_WritePin(PERIPH_GPIO_Port, PERIPH_Pin, GPIO_PIN_SET);
+
+  HAL_SuspendTick();
+  HAL_TIM_PWM_DeInit(&htim14);
+  HAL_TIM_PWM_DeInit(&htim3);
+
+  HAL_PWR_DisableWakeUpPin(PWR_WAKEUP_PIN1);
+  HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN1_LOW);
+  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WUF);
+
+  HAL_PWREx_EnterSHUTDOWNMode();
 
   /* USER CODE END 2 */
 
@@ -139,7 +155,8 @@ int main(void)
 	  //HAL_Delay(1000ULL);
 	  for (int i = 0; i < melodyMaxIndex; i++)
 	  {
-		  tone(&htim14, melody1Notes[i], melody1Durations[i]);
+		  //tone(&htim14, melody1Notes[i], melody1Durations[i]);
+		  buzzer_toneDuration(melody1Notes[i], melody1Durations[i], TIM_CHANNEL_1);
 	  }
   }
   /* USER CODE END 3 */
@@ -181,88 +198,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-}
-
-/**
-  * @brief TIM1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_TIM1_Init(void)
-{
-
-  /* USER CODE BEGIN TIM1_Init 0 */
-
-  /* USER CODE END TIM1_Init 0 */
-
-  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
-  TIM_OC_InitTypeDef sConfigOC = {0};
-  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
-
-  /* USER CODE BEGIN TIM1_Init 1 */
-
-  /* USER CODE END TIM1_Init 1 */
-  htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 1200;
-  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 100;
-  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  htim1.Init.RepetitionCounter = 0;
-  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-  if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
-  if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  if (HAL_TIM_PWM_Init(&htim1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterOutputTrigger2 = TIM_TRGO2_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
-  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
-  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
-  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
-  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
-  sBreakDeadTimeConfig.DeadTime = 0;
-  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
-  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
-  sBreakDeadTimeConfig.BreakFilter = 0;
-  sBreakDeadTimeConfig.BreakAFMode = TIM_BREAK_AFMODE_INPUT;
-  sBreakDeadTimeConfig.Break2State = TIM_BREAK2_DISABLE;
-  sBreakDeadTimeConfig.Break2Polarity = TIM_BREAK2POLARITY_HIGH;
-  sBreakDeadTimeConfig.Break2Filter = 0;
-  sBreakDeadTimeConfig.Break2AFMode = TIM_BREAK_AFMODE_INPUT;
-  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
-  if (HAL_TIMEx_ConfigBreakDeadTime(&htim1, &sBreakDeadTimeConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN TIM1_Init 2 */
-
-  /* USER CODE END TIM1_Init 2 */
-  HAL_TIM_MspPostInit(&htim1);
-
 }
 
 /**
@@ -403,12 +338,6 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(PERIPH_GPIO_Port, PERIPH_Pin, GPIO_PIN_SET);
 
-  /*Configure GPIO pin : PA0 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
   /*Configure GPIO pin : PERIPH_Pin */
   GPIO_InitStruct.Pin = PERIPH_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
@@ -421,6 +350,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+/*
 void tone(TIM_HandleTypeDef *_htim, uint32_t _freq, uint32_t _durMs)
 {
 	// Calculate the prescaler.
@@ -433,7 +363,7 @@ void tone(TIM_HandleTypeDef *_htim, uint32_t _freq, uint32_t _durMs)
 	uint32_t _period = ((HAL_RCC_GetSysClockFreq() / (_prescaler)) / _freq) - 1;
 
 	// Set duty cycle to 50%.
-	uint32_t _compare = _period / 20;
+	uint32_t _compare = _period / 2;
 
 	// Set the duty to 0%.
 	_htim->Instance->CCR1 = 0;
@@ -453,12 +383,13 @@ void tone(TIM_HandleTypeDef *_htim, uint32_t _freq, uint32_t _durMs)
 	// Start the PWM.
 	HAL_TIM_PWM_Start(_htim, TIM_CHANNEL_1);
 
-	// Wait.
+	// Wait defined amount of time.
 	HAL_Delay(_durMs);
 
 	// Stop the PWM.
 	HAL_TIM_PWM_Stop(_htim, TIM_CHANNEL_1);
 }
+*/
 /* USER CODE END 4 */
 
 /**

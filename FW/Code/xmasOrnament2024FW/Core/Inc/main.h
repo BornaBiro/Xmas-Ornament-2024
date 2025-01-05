@@ -59,8 +59,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define MARINA_BUZZ_Pin GPIO_PIN_5
-#define MARINA_BUZZ_GPIO_Port GPIOA
 #define PERIPH_Pin GPIO_PIN_7
 #define PERIPH_GPIO_Port GPIOA
 
