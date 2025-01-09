@@ -1,4 +1,4 @@
-# Xmas-Ornament-2024
+# Xmas Ornament - 2024 update
 New and updated DIY Xmas Ornament based around STM32C011 MCU.
 
 Board features:
