@@ -11,8 +11,6 @@ Board features:
 - Low power compatable - 2uA deep sleep current
 - USB-C connector for charging
 
-**NOTE:** This project is still in development - Complete firmware still needs to be written. Libraries for the buzzer and WS LEDs are written.
-
 **NOTE2:** PCB has error - STM32 doesn't have connected GND!
 
 ![PCB Image](extras/images/image1.jpg)
