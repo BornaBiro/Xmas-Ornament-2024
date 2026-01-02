@@ -1,7 +1,7 @@
 # Xmas Ornament - 2024 update
 New and updated DIY Xmas Ornament based around STM32C011 MCU.
 
-# !NOTE!
+# ! NOTE ! - PLEASE READ THIS FIRST!
 Before making this project keep in mind that this PCB has an error. It's not fixed in design files, you will need it to fix it yourself!
 
 Issues is that STM32 MCU is missing it's GND.
