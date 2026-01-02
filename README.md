@@ -45,3 +45,7 @@ There are two buttons for controlling the ornament. At moment of connecting the 
   - Long press: Mute/Unmute the ornament
 
 ![LEDs](extras/images/image2.jpg)
+
+# License
+All files written or created by me are using the MIT Licence and can be re-used BUT original author (me) must not be removed!
+Part of the code for WS2812 LED Driver (ws2182_hsv() function code) is copied from the [Adafruit_NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel). Thanks Adafruit!
