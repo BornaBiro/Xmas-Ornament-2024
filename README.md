@@ -46,6 +46,21 @@ There are two buttons for controlling the ornament. At moment of connecting the 
 
 ![LEDs](extras/images/image2.jpg)
 
+## Requirements
+- PC or a laptop
+- STM32CubeIDE v1.19.0 or older (yes, older, new v2.0.0 is just bad)
+  - I used STM32CubeIDE v1.19.0, Build: 25607_20250703_0907 (UTC)
+- STM32C0 FW package v1.4.0
+- STLink v2 (ideally with [reset mod](https://chauquest.com/index.php/article/why-your-st-link-v2-reset-doesnt-work-and-how-to-fix-it/))
+- Completed PCB
+- Jumper cables to connect STLink and PCB
+- Soldering iron
+- Li-Ion battery
+- Electricity for all of that (not optional!)
+
+## Usage
+Open the project in STM32CubeIDE, built it (everything should be set-up), and run the code. If, on the code run (upload) pop-up window shows up, just press Run button and the code should be uploaded to the board. If not, maybe something ins't soldered correctly, or there is a connection issue with the board or the programmer. To check that, you can use STM32CubeProgrammer - it's faster for testing programmer connection than STM32CubeIDE.
+
 # License
 All files written or created by me are using the MIT Licence and can be re-used BUT original author (me) must not be removed!
 Part of the code for WS2812 LED Driver (ws2182_hsv() function code) is copied from the [Adafruit_NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel). Thanks Adafruit!
