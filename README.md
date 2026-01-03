@@ -59,7 +59,7 @@ There are two buttons for controlling the ornament. At moment of connecting the 
 - Electricity for all of that (not optional!)
 
 ## Usage
-Open the project in STM32CubeIDE, built it (everything should be set-up), and run the code. If, on the code run (upload) pop-up window shows up, just press Run button and the code should be uploaded to the board. If not, maybe something ins't soldered correctly, or there is a connection issue with the board or the programmer. To check that, you can use STM32CubeProgrammer - it's faster for testing programmer connection than STM32CubeIDE.
+Open the project in STM32CubeIDE, build it (everything should be set-up) by pressing CTRL+B (or CMD+B on Mac) , and run the code. If, on the code run (upload) pop-up window shows up, just press Run button and the code should be uploaded to the board. If not, maybe something ins't soldered correctly, or there is a connection issue with the board or the programmer. To check that, you can use STM32CubeProgrammer - it's faster for testing programmer connection than STM32CubeIDE.
 
 # License
 All files written or created by me are using the MIT Licence and can be re-used BUT original author (me) must not be removed!
